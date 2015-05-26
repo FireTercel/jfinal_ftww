@@ -1,0 +1,204 @@
+
+2015-05-26 12:06:13
+[ERROR]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:19:57
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:20:12
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:20:25
+[ERROR]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:23:37
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:24:17
+[WARN]-[Thread: JFinal-Scanner]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/E:/eclipse/repository/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar!/ehcache-failsafe.xml
+
+2015-05-26 12:24:17
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:24:48
+[WARN]-[Thread: main]-[net.sf.ehcache.store.disk.DiskStorageFactory.loadIndex()]: Index file C:\Users\poicom7\AppData\Local\Temp\jdbc%0052ealm%002eauthorization%0043ache.index is corrupt, deleting and ignoring it : java.lang.ClassNotFoundException: org.apache.shiro.subject.SimplePrincipalCollection
+
+2015-05-26 12:24:49
+[ERROR]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:25:38
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:25:39
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:25:52
+[ERROR]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:25:52
+[ERROR]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:26:12
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:26:12
+[ERROR]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:26:37
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-26 12:26:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:26:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  Hello Jfinal .
+
+2015-05-26 12:27:12
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-26 12:27:12
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:28:05
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:28:05
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:28:05
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:28:05
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:28:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-26 12:28:23
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:28:23
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:28:23
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:29:00
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:29:27
+[WARN]-[Thread: main]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: The index for data file C:\Users\poicom7\AppData\Local\Temp\shiro-active%0053ession%0043ache.data is out of date, probably due to an unclean shutdown. Deleting index file C:\Users\poicom7\AppData\Local\Temp\shiro-active%0053ession%0043ache.index
+
+2015-05-26 12:29:48
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-26 12:30:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:30:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:30:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:31:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:31:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-26 12:31:41
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:31:42
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:31:42
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:32:39
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:32:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:32:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:33:37
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:36:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-26 12:38:07
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:38:07
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:38:07
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:38:07
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:38:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-26 12:38:16
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:38:16
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:38:16
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:38:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:39:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-26 12:39:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:39:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:39:06
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:39:07
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-26 12:50:53
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-26 12:50:53
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:50:53
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:50:53
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:50:53
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-26 12:51:59
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-26 12:51:59
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:51:59
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:51:59
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-26 12:51:59
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存

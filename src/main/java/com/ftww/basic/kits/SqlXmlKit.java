@@ -22,7 +22,7 @@ import org.dom4j.io.SAXReader;
 
 /**
  * 处理SQL Map
- * @author poicom7
+ * @author FireTercel
  *说明：加载sql map中的sql到map中，并提供动态长度sql处理
  */
 public class SqlXmlKit {
@@ -60,6 +60,7 @@ public class SqlXmlKit {
 		//统一转为小写
 		queryStr = queryStr.toLowerCase();
 		for(String badKeyWord:badKeyWordList){
+			//indexOf()方法，如果匹配不到 return -1
 			if(queryStr.indexOf(badKeyWord)>=0){
 				return true;
 			}

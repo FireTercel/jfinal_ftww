@@ -8,7 +8,7 @@ import org.junit.Test;
 
 /**
  * 公共工具类
- * @author poicom7
+ * @author FireTercel
  *
  */
 public class UtilsKit {

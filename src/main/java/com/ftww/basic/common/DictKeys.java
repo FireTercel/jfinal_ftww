@@ -2,7 +2,7 @@ package com.ftww.basic.common;
 
 /**
  * 常亮数据字典
- * @author tangdongyu
+ * @author FireTercel
  *
  */
 public abstract class DictKeys {

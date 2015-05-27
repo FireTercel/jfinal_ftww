@@ -7,6 +7,11 @@ import org.apache.commons.codec.binary.Base64;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
+/**
+ * 
+ * @author FireTercel 2015年5月27日 
+ *
+ */
 public class StringKit {
 	
 	private static Logger log=Logger.getLogger(StringKit.class);

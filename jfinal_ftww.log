@@ -202,3 +202,776 @@
 
 2015-05-26 12:51:59
 [INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: EhCachePlugin EhCache缓存
+
+2015-05-27 10:26:32
+[ERROR]-[Thread: main]-[com.ftww.basic.kits.SqlXmlKit.getSql()]: sql语句不存在：sql id是from pt_user u 			left join pt_userinfo ui on u.userinfoids = ui.ids 			left join pt_department d on u.departmentids = d.ids 			where 1=1 and u.userName like #'%$userName$%'#
+
+2015-05-27 18:20:03
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-27 18:20:04
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-27 18:20:04
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-27 18:20:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-27 18:20:10
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: init datasource error
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2297)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2218)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:618)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:36)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:203)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jfinalftww'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2236)
+	... 37 more
+
+2015-05-27 18:20:10
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: dataSource init error
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2297)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2218)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:618)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:36)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:203)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jfinalftww'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2236)
+	... 37 more
+
+2015-05-27 18:20:10
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-27 18:20:10
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:203)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2297)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2218)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:618)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:36)
+	... 20 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jfinalftww'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2236)
+	... 37 more
+
+2015-05-27 18:20:10
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:203)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2297)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2218)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:618)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:36)
+	... 20 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jfinalftww'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2236)
+	... 37 more
+
+2015-05-27 18:20:10
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:203)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2297)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2218)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:618)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:36)
+	... 20 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jfinalftww'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2236)
+	... 37 more
+
+2015-05-27 18:20:10
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-27 18:20:58
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-27 18:20:59
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-27 18:20:59
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 加载properties失败！...
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 加载properties失败！...
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 加载properties失败！...
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 加载properties失败！...
+
+2015-05-27 18:20:59
+[INFO]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 加载properties失败！...
+
+2015-05-27 18:21:00
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-27 18:21:00
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-27 18:21:00
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-27 18:21:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-27 18:21:35
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-27 18:21:35
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-27 18:21:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-27 18:21:36
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-27 18:21:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-27 18:21:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-27 18:21:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-27 18:21:36
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-27 18:22:01
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-27 18:22:01
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-27 18:22:01
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-27 18:22:02
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-27 18:22:02
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-27 18:22:02
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-27 18:22:02
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-27 18:22:02
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-27 18:23:04
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-27 18:23:04
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-27 18:23:04
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-27 18:23:05
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-27 18:23:05
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-27 18:23:05
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-27 18:23:05
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-27 18:23:05
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80

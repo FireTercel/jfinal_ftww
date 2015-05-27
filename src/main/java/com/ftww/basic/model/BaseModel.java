@@ -15,6 +15,12 @@ import com.jfinal.plugin.activerecord.Model;
 import com.jfinal.plugin.activerecord.Table;
 import com.jfinal.plugin.activerecord.TableMapping;
 
+/**
+ * Model基础类
+ * @author FireTercel
+ *
+ * @param <M>
+ */
 public abstract class BaseModel<M extends Model<M>> extends Model<M> {
 
 	private static final long serialVersionUID = -4816622475317218590L;
@@ -95,6 +101,7 @@ public abstract class BaseModel<M extends Model<M>> extends Model<M> {
 	/**
 	 * 重写update方法
 	 */
+	@SuppressWarnings("unchecked")
 	public boolean update(){
 		
 		Table table=getTable();
@@ -120,6 +127,7 @@ public abstract class BaseModel<M extends Model<M>> extends Model<M> {
 			Set<String> modifyFlag = null;
 			try{
 				Field field =  this.getClass().getSuperclass().getSuperclass().getDeclaredField("modifyFlag");
+				//  由于属性modifyFlag 是private，所以要获得当前对象中当前Field的value就需要先进行该设置。
 				field.setAccessible(true);
 				Object object = field.get(this);
 				if(null != object){
@@ -160,6 +168,25 @@ public abstract class BaseModel<M extends Model<M>> extends Model<M> {
 		return (Date) obj;
 		
 	}
+	
+	/**
+	 * 添加或者更新缓存
+	 * @param ids
+	 */
+	public abstract void cacheAdd(String ids);
+	
+	/**
+	 * 删除缓存
+	 * @param ids
+	 */
+	public abstract void cacheRemove(String ids);
+	
+	/**
+	 * 获取缓存
+	 * @param key
+	 * @return
+	 */
+	public abstract M cacheGet(String key);
 	
 
 }

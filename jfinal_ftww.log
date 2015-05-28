@@ -975,3 +975,3565 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown da
 
 2015-05-27 18:23:05
 [INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:07:18
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:07:19
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:07:19
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:07:20
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:07:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:07:22
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:07:22
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:07:22
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:07:22
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_department' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:07:22
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:10:08
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:10:08
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:10:08
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:10:08
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:10:08
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_dict' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:10:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:10:45
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:10:45
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:10:45
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:10:46
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:10:46
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:10:46
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:10:46
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_group' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:10:46
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:12:20
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:12:20
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:12:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:12:21
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:12:21
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:12:21
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:12:21
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_menu' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:12:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:12:35
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:12:36
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:12:36
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:12:36
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:12:36
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:12:36
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_module' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:12:36
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:13:49
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:13:50
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:13:50
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:13:50
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:13:50
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED jfinal: java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:13:50
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at com.jfinal.core.Config.startPlugins(Config.java:96)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.ftww.basic.config.AppConfig.main(AppConfig.java:204)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:48)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:171)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	... 18 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'jfinalftww.pt_upload' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+	at com.alibaba.druid.pool.DruidPooledStatement.executeQuery(DruidPooledStatement.java:143)
+	at com.jfinal.plugin.activerecord.TableBuilder.doBuild(TableBuilder.java:63)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:40)
+	... 20 more
+
+2015-05-28 10:13:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:15:40
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:15:40
+[ERROR]-[Thread: main]-[com.ftww.basic.plugin.log.Slf4jLogger.error()]: file serach error：E:\eclipse\workspace\jfinal_ftww\src\main\webapp\WEB-INF\lib is not a dir！
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:15:40
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:15:41
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:15:42
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 10:15:42
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 10:15:42
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 10:15:42
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:17:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:17:21
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:17:22
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 10:17:22
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 10:17:22
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 10:17:22
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:26:46
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:26:47
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:26:47
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 10:26:47
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 10:26:47
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 10:29:23
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 10:29:24
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 10:29:24
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 10:29:24
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 12:26:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 12:26:33
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:26:33
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 12:26:33
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 12:26:33
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 12:26:34
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.plugin.properties.PropertiesPlugin.start()]:  == Constants == 缓存 Properties配置文件完成！
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集完成！
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:30:16
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 12:30:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 12:30:18
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集完成！
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 12:30:52
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:30:53
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 12:30:53
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 12:30:53
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 使用数据库类型是 mysql
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: configPlugin 添加druidPlugin插件
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: I18NPlugin 国际化键值对加载
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]: SqlXmlPlugin 解析并缓存 xml sql
+
+2015-05-28 12:31:17
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:31:18
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 支持使用session
+
+2015-05-28 12:31:18
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 权限认证拦截器
+
+2015-05-28 12:31:18
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]: configInterceptor 参数封装拦截器
+
+2015-05-28 12:31:18
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin  == EhCache缓存
+
+2015-05-28 12:33:30
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==     解析并缓存 xml sql
+
+2015-05-28 12:33:31
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:33:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 12:33:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 12:33:31
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 12:33:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin == EhCache缓存
+
+2015-05-28 12:33:50
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 12:33:51
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:33:51
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 12:33:51
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 12:33:51
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 12:34:05
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 12:34:06
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:34:06
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 12:34:06
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 12:34:06
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 12:40:20
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 12:40:21
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:40:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 12:40:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 12:40:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 12:40:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 12:41:41
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = baseModel.sql.xml, sql key = basic.baseModel.version, sql content = 
+		 
+        	select version from ${table} where ${pk} = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = baseModel.sql.xml, sql key = basic.baseModel.select, sql content = 
+		 
+        	select * from ${table} where ${column} = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = baseModel.sql.xml, sql key = basic.baseModel.selectCount, sql content = 
+		 
+        	select count(*) from ${table} where ${column} = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = baseModel.sql.xml, sql key = basic.baseModel.update, sql content = 
+		 
+        	update ${table} set ${column} = ? where ${condition} = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = baseModel.sql.xml, sql key = basic.baseModel.delete, sql content = 
+		 
+        	delete from ${table} where ${column} = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = department.sql.xml, sql key = basic.department.rootNode, sql content = 
+		 
+        	select ids, names, isparent, images from pt_department where parentDepartmentIds is null order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = department.sql.xml, sql key = basic.department.childNode, sql content = 
+		 
+        	select ids, names, isparent, images from pt_department where parentDepartmentIds = ? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = department.sql.xml, sql key = basic.department.childCount, sql content = 
+		 
+        	select count(*) as counts from pt_department where parentdepartmentids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.all, sql content = 
+		 
+        	select ids from pt_dict
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.treeTableNodeRoot, sql content = 
+		 
+        	select * from pt_dict where parentids is null order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.treeTableChildNode, sql content = 
+		 
+        	select * from pt_dict where parentids=? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.treeNodeRoot, sql content = 
+		 
+        	select ids, names, isparent, images, status from pt_dict where parentIds is null order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.treeChildNode, sql content = 
+		 
+        	select ids, names, isparent, images, status from pt_dict where parentIds = ? order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.idAndI18n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_dict where ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.numbers, sql content = 
+		 
+        	select * from pt_dict where numbers = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.numbersAndI18n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_dict where numbers = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.child, sql content = 
+		 
+        	select * from pt_dict where parentids = ? and status = '1' order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.childAndI8n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_dict where parentids = ? and status = '1' order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.parent, sql content = 
+		 
+        	select * from pt_dict where ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = dict.sql.xml, sql key = basic.dict.parentAndI18n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_dict where ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = group.sql.xml, sql key = basic.group.all, sql content = 
+		 
+        	select ids from pt_group
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = group.sql.xml, sql key = basic.group.noCheckedFilter, sql content = 
+		 
+        	select ids, names from pt_group where ids not in ( ${fitler} ) order by names asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = group.sql.xml, sql key = basic.group.checkedFilter, sql content = 
+		 
+        	select ids, names from pt_group where ids in ( ${fitler} ) order by names asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = group.sql.xml, sql key = basic.group.noChecked, sql content = 
+		 
+        	select ids, names from pt_group order by names asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = group.sql.xml, sql key = basic.group.splitPage, sql content = 
+		 
+        	from 
+        		pt_group 
+        	where 
+        		1=1
+        		
+			<% if(!isEmpty(names)){ %>
+					and names like #'%$names$%'#
+			<% } %>
+			
+			<% if(!isEmpty(numbers)){ %>
+					and numbers like #'%$numbers$%'#
+			<% } %>
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = menu.sql.xml, sql key = basic.menu.root, sql content = 
+		 
+        	select ids, ${names}, isparent, images from pt_menu where parentMenuIds is null and systemsIds = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = menu.sql.xml, sql key = basic.menu.child, sql content = 
+		 
+        	select ids, ${names}, isparent, images from pt_menu where parentMenuIds = ? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = menu.sql.xml, sql key = basic.menu.childCount, sql content = 
+		 
+        	select count(*) as counts from pt_menu where parentmenuids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = menu.sql.xml, sql key = basic.menu.rootId, sql content = 
+		 
+        	select ids from pt_menu where parentmenuids is null and systemsIds = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = menu.sql.xml, sql key = basic.menu.operator, sql content = 
+		 
+        	select m.${names}, o.url  from pt_menu m left join pt_operator o on m.operatorids=o.ids 
+        	where parentmenuids = ? and m.operatorids in ( ${fitler} ) order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = module.sql.xml, sql key = basic.module.rootBySystemIds, sql content = 
+		 
+        	select ids, names, isparent, images from pt_module where parentModuleIds is null and systemsIds = ? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = module.sql.xml, sql key = basic.module.root, sql content = 
+		 
+        	select pm.ids, (select ps.names from pt_systems ps where ps.ids = pm.systemsIds) as names, pm.isParent, pm.images 
+        	from pt_module pm where pm.parentModuleIds is null order by pm.orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = module.sql.xml, sql key = basic.module.child, sql content = 
+		 
+        	select ids, names, isparent, images from pt_module where parentModuleIds = ? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = module.sql.xml, sql key = basic.module.childCount, sql content = 
+		 
+        	select count(*) as counts from pt_module where parentmoduleids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = operator.sql.xml, sql key = basic.operator.all, sql content = 
+		 
+        	select ids from pt_operator
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = operator.sql.xml, sql key = basic.operator.rootModule, sql content = 
+		 
+        	select pm.ids as ids, (select ps.names from pt_systems ps where ps.ids = pm.systemsIds) as names, pm.isParent, pm.images 
+        	from pt_module pm where pm.parentModuleIds is null order by pm.orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = operator.sql.xml, sql key = basic.operator.childModule, sql content = 
+		 
+        	select ids, names, isParent , images from pt_module where parentModuleIds = ? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = operator.sql.xml, sql key = basic.operator.byModuleIds, sql content = 
+		 
+        	select ids, names from pt_operator where moduleIds = ? order by url asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = operator.sql.xml, sql key = basic.operator.splitPage, sql content = 
+		 
+        	from pt_operator o
+        	left join pt_module m on o.moduleids = m.ids
+        	left join pt_systems s on s.ids = m.systemsids
+        	where 1=1
+			
+			<% if(!isEmpty(names)){ %>
+					and o.names like #'%$names$%'#
+			<% } %>
+			
+			<% if(!isEmpty(url)){ %>
+					and o.url like #'%$url$%'#
+			<% } %>
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.all, sql content = 
+		 
+        	select ids from pt_param
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.treeTableNodeRoot, sql content = 
+		 
+        	select * from pt_param where parentids is null order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.treeTableChildNode, sql content = 
+		 
+        	select * from pt_param where parentids=? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.treeNodeRoot, sql content = 
+		 
+        	select ids, names, isparent, images, status from pt_param where parentIds is null order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.treeChildNode, sql content = 
+		 
+        	select ids, names, isparent, images, status from pt_param where parentIds = ? order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.idAndI18n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_param where ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.numbers, sql content = 
+		 
+        	select * from pt_param where numbers = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.numbersAndI18n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_param where numbers = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.child, sql content = 
+		 
+        	select * from pt_param where parentids = ? and status = '1' order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.childAndI8n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_param where parentids = ? and status = '1' order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.parent, sql content = 
+		 
+        	select * from pt_param where ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = param.sql.xml, sql key = basic.param.parentAndI18n, sql content = 
+		 
+        	select ids, numbers, parentids, ${val} as val from pt_param where ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = resources.sql.xml, sql key = basic.resources.pv_pg, sql content = 
+		 
+        	select to_char(startdate, 'yyyy-MM-DD') adates, count(*) acounts from pt_syslog 
+        	where startdate>=? and startdate<=? 
+        	group by adates order by adates asc 
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = resources.sql.xml, sql key = basic.resources.pv_mysql, sql content = 
+		 
+        	select date_format(startdate,'%Y-%m-%d') adates, count(*) acounts from pt_syslog 
+        	where startdate>=? and startdate<=? 
+        	group by adates order by adates asc 
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = resources.sql.xml, sql key = basic.resources.pv_oracle, sql content = 
+		 
+        	select to_char(startdate,'YYYY-MM-DD') adates, count(*) acounts from pt_syslog 
+        	where startdate>=? and startdate<=? 
+        	group by to_char(startdate,'YYYY-MM-DD') order by adates asc 
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = resources.sql.xml, sql key = basic.resources.24hour, sql content = 
+		 
+        	select * from pt_resources where hostname=? and createdate>=? and createdate<=? order by createdate asc 
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = role.sql.xml, sql key = basic.role.all, sql content = 
+		 
+        	select ids from pt_role
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = role.sql.xml, sql key = basic.role.noCheckedFilter, sql content = 
+		 
+        	select ids, names from pt_role where ids not in ( ${fitler} ) order by names asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = role.sql.xml, sql key = basic.role.checkedFilter, sql content = 
+		 
+        	select ids, names from pt_role where ids in ( ${fitler} ) order by names asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = role.sql.xml, sql key = basic.role.noChecked, sql content = 
+		 
+        	select ids, names from pt_role order by names asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = role.sql.xml, sql key = basic.role.splitPage, sql content = 
+		 
+        	from pt_role where 1=1
+			
+			<% if(!isEmpty(names)){ %>
+					and names like #'%$names$%'#
+			<% } %>
+			
+			<% if(!isEmpty(numbers)){ %>
+					and numbers like #'%$numbers$%'#
+			<% } %>
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = station.sql.xml, sql key = basic.station.all, sql content = 
+		 
+        	select ids from pt_station
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = station.sql.xml, sql key = basic.station.root, sql content = 
+		 
+        	select ids, names, isparent, images from pt_station where parentStationIds is null order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = station.sql.xml, sql key = basic.station.child, sql content = 
+		 
+        	select ids, names, isparent, images from pt_station where parentStationIds = ? order by orderIds asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = station.sql.xml, sql key = basic.station.childCount, sql content = 
+		 
+        	select count(*) as counts from pt_station where parentstationids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = sysLog.sql.xml, sql key = basic.sysLog.view, sql content = 
+		 
+        	select s.*, o.names onames, o.url ourl, u.username 
+        	from pt_syslog s
+        	left join pt_user u on s.userids = u.ids
+        	left join pt_operator o on s.operatorids = o.ids
+        	where s.ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = sysLog.sql.xml, sql key = basic.sysLog.splitPage, sql content = 
+		 
+        	from pt_syslog s 
+        	left join pt_user u on s.userids = u.ids 
+        	left join pt_operator o on s.operatorids = o.ids 
+        	where 1=1 
+			
+			<% if(!isEmpty(url)){ %>
+					and o.url like #'%$url$%'#
+			<% } %>
+			
+			<% if(!isEmpty(names)){ %>
+					and o.names like #'%$names$%'#
+			<% } %>
+			
+			<% if(!isEmpty(username)){ %>
+					and u.username like #'%$username$%'#
+			<% } %>
+			
+			<% if(!isEmpty(ips)){ %>
+					and s.ips like #'%$ips$%'#
+			<% } %>
+			
+			<% if(!isEmpty(status)){ %>
+					and s.status = #$status$#
+			<% } %>
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = systems.sql.xml, sql key = basic.systems.all, sql content = 
+		 
+        	select ids, names from pt_systems order by orderids asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = systems.sql.xml, sql key = basic.systems.splitPage, sql content = 
+		 
+        	from pt_systems where 1=1
+			
+			<% if(!isEmpty(names)){ %>
+					and names like #'%$names$%'#
+			<% } %>
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = test.sql.xml, sql key = basic.test.autoComplete, sql content = 
+		 
+        	select url from pt_operator where url like #'$url$%'# limit #$size$# offset 0
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = user.sql.xml, sql key = basic.user.all, sql content = 
+		 
+        	select ids from pt_user
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = user.sql.xml, sql key = basic.user.treeUserNode, sql content = 
+		 
+        	select ids, userName as names from pt_user where departmentIds = ? order by userName asc
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = user.sql.xml, sql key = basic.user.column, sql content = 
+		 
+        	select * from pt_user where ${column} = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = user.sql.xml, sql key = basic.user.stop, sql content = 
+		 
+        	update pt_user u set u.stopDate = ? , u.errorCount = ? where u.ids = ? 
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = user.sql.xml, sql key = basic.user.start, sql content = 
+		 
+        	update pt_user u set u.stopdate = null, u.errorcount = 0 where u.ids = ?
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.kits.SqlXmlKit.init()]: sql加载, sql file = user.sql.xml, sql key = basic.user.splitPage, sql content = 
+		 
+        	from pt_user u 
+			left join pt_userinfo ui on u.userinfoids = ui.ids 
+			left join pt_department d on u.departmentids = d.ids 
+			where 1=1 
+			<% if(!isEmpty(userClass)){ %>
+					and u.userClass = #'$userClass$'#
+			<% } %>
+			
+			<% if(!isEmpty(userName)){ %>
+					and u.userName like #'%$userName$%'#
+			<% } %>
+			
+			<% if(!isEmpty(names)){ %>
+					and ui.names like #'%$names$%'#
+			<% } %>
+			
+			<% if(!isEmpty(sex)){ %>
+					and ui.sex like #'%$sex$%'#
+			<% } %>
+			
+			<% if(!isEmpty(email)){ %>
+					and ui.email like #'%$email$%'#
+			<% } %>
+			
+			<% if(!isEmpty(mobile)){ %>
+					and ui.mobile like #'%$mobile$%'#
+			<% } %>
+			
+			<% if(!isEmpty(telephone)){ %>
+					and ui.telephone like #'%$telephone$%'#
+			<% } %>
+			
+			<% if(!isEmpty(idCard)){ %>
+					and ui.idCard like #'%$idCard$%'#
+			<% } %>
+			
+			<% if(!isEmpty(qq)){ %>
+					and ui.qq like #'%$qq$%'#
+			<% } %>
+			
+			<% if(!isEmpty(birthday)){ %>
+					and ui.birthday = #'$birthday$'#
+			<% } %>
+    	
+	
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 12:41:42
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 12:43:37
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 12:43:38
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 12:43:38
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 12:43:38
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 12:43:38
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 16:14:11
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 16:14:13
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 16:14:14
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 16:14:14
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 16:14:14
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 16:14:14
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configHandler()]: configHandler 全局配置处理器，主要是记录日志和request域值处理
+
+2015-05-28 16:14:15
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  == afterJFinalStart ==  缓存参数
+
+2015-05-28 16:14:15
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  == afterJFinalStart ==  启动操作日志入库线程
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存参数初始化 start ...
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：User start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]: afterJFinalStart 创建自动回复lucene索引
+
+2015-05-28 16:14:15
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]: afterJFinalStart 系统负载
+
+2015-05-28 16:14:15
+[WARN]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.warn()]: Could not find cache config [system], using default.
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：User end, size = 2
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Group start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Group end, size = 2
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Role start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Role end, size = 2
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Station start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Station end, size = 10
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Operator start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Operator end, size = 140
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Dict start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Dict end, size = 17
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Param start
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Param end, size = 5
+
+2015-05-28 16:14:15
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存参数初始化 end ...
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 16:18:55
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configHandler()]: configHandler 全局配置处理器，主要是记录日志和request域值处理
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  == afterJFinalStart ==  缓存参数
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  == afterJFinalStart ==  启动操作日志入库线程
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]: afterJFinalStart 创建自动回复lucene索引
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]: afterJFinalStart 系统负载
+
+2015-05-28 16:18:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 16:19:02
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存参数初始化 start ...
+
+2015-05-28 16:19:10
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：User start
+
+2015-05-28 16:19:10
+[WARN]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.warn()]: Could not find cache config [system], using default.
+
+2015-05-28 16:19:11
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：User end, size = 2
+
+2015-05-28 16:19:20
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Group start
+
+2015-05-28 16:19:49
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Group end, size = 2
+
+2015-05-28 16:19:54
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Role start
+
+2015-05-28 16:19:54
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Role end, size = 2
+
+2015-05-28 16:19:55
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Station start
+
+2015-05-28 16:20:21
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Station end, size = 10
+
+2015-05-28 16:20:23
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Operator start
+
+2015-05-28 16:20:24
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Operator end, size = 140
+
+2015-05-28 16:20:32
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Dict start
+
+2015-05-28 16:22:38
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Dict end, size = 17
+
+2015-05-28 16:22:43
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Param start
+
+2015-05-28 16:22:43
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Param end, size = 5
+
+2015-05-28 16:22:44
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存参数初始化 end ...
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.1.8.v20121106
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 缓存 Properties配置文件中的配置信息！
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置字符集！
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:  == Constants == 设置开发模式
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置日志--Slf4j--
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 设置Beetl视图
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configConstant()]:   == Constants == 视图error page设置
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configRoute()]:   == Routes ==  路由扫描注册
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==   配置Druid数据库连接池连接属性
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--DruidPlugin ==    配置Druid数据库连接池大小
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==   数据库类型判断
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    使用数据库类型是 mysql
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins ==    添加druidPlugin插件
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--TablePlugin == 表扫描注册
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--I18NPlugin ==    国际化键值对加载
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--EhCachePlugin ==  EhCache缓存
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configPlugin()]:   == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql
+
+2015-05-28 16:23:25
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==   支持使用session
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    权限认证拦截器
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configInterceptor()]:   == Interceptors ==    参数封装拦截器
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.configHandler()]: configHandler 全局配置处理器，主要是记录日志和request域值处理
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  == afterJFinalStart ==  缓存参数
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]:  == afterJFinalStart ==  启动操作日志入库线程
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存参数初始化 start ...
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：User start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]: afterJFinalStart 创建自动回复lucene索引
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[com.ftww.basic.config.AppConfig.afterJFinalStart()]: afterJFinalStart 系统负载
+
+2015-05-28 16:23:26
+[WARN]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.warn()]: Could not find cache config [system], using default.
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：User end, size = 2
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Group start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Group end, size = 2
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Role start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Role end, size = 2
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Station start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:80
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Station end, size = 10
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Operator start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Operator end, size = 140
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Dict start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Dict end, size = 17
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Param start
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存加载：Param end, size = 5
+
+2015-05-28 16:23:26
+[INFO]-[Thread: Thread-5]-[com.ftww.basic.plugin.log.Slf4jLogger.info()]: 缓存参数初始化 end ...
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.beforeJFinalStop()]: beforeJFinalStop 释放lucene索引资源
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.beforeJFinalStop()]: beforeJFinalStop 释放日志入库线程
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[com.ftww.basic.config.AppConfig.beforeJFinalStop()]: beforeJFinalStop 释放系统负载抓取线程
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.servlet.listener.ELContextCleaner.contextDestroyed()]: javax.el.BeanELResolver purged
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:43:57
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:53:02
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:53:02
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:53:02
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:55:24
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:55:24
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:55:24
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:56:45
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:56:45
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:56:45
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:56:55
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:56:55
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 16:56:55
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:01:12
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:01:12
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:01:12
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:03:29
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:03:29
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:03:29
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:06:20
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:06:20
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:06:20
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:18:07
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:18:07
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:18:07
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:19:03
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:19:03
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:19:03
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:19:43
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:19:43
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:19:43
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:20:09
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:20:09
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:20:09
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:21:45
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.doStop()]: stopped o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:21:45
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}
+
+2015-05-28 17:21:45
+[INFO]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/eclipse/workspace/jfinal_ftww/src/main/webapp/}

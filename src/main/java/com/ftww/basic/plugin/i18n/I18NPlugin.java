@@ -91,7 +91,7 @@ public class I18NPlugin implements IPlugin {
 				"en_US",
 				"ja"
 			};
-String fileName = null;
+		String fileName = null;
 		
 		for (String language : languages) {
 			fileName = "/message_" + language + ".properties";

@@ -13,6 +13,9 @@ import com.ftww.basic.beetl.render.MyBeetlRenderFactory;
 import com.ftww.basic.beetl.tag.DictTag;
 import com.ftww.basic.beetl.tag.ParamTag;
 import com.ftww.basic.common.DictKeys;
+import com.ftww.basic.handler.GlobalHandler;
+import com.ftww.basic.interceptor.AuthenticationInterceptor;
+import com.ftww.basic.interceptor.ParamPkgInterceptor;
 import com.ftww.basic.kits.StringKit;
 import com.ftww.basic.plugin.ControllerPlugin;
 import com.ftww.basic.plugin.TablePlugin;
@@ -20,6 +23,8 @@ import com.ftww.basic.plugin.i18n.I18NPlugin;
 import com.ftww.basic.plugin.log.Slf4jLogFactory;
 import com.ftww.basic.plugin.properties.PropertiesPlugin;
 import com.ftww.basic.plugin.sqlinxml.SqlXmlPlugin;
+import com.ftww.basic.thread.ThreadParamInit;
+import com.ftww.basic.thread.ThreadSysLog;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -64,7 +69,7 @@ public class AppConfig extends JFinalConfig {
 		me.setDevMode(getPropertyToBoolean(DictKeys.config_devMode, false));
 		
 		log.info("  == Constants == 设置日志--Slf4j--");
-		Logger.setLoggerFactory(new Slf4jLogFactory());
+		//Logger.setLoggerFactory(new Slf4jLogFactory());  
 		
 		log.info("  == Constants == 设置Beetl视图");
 		me.setMainRenderFactory(new MyBeetlRenderFactory());
@@ -128,19 +133,20 @@ public class AppConfig extends JFinalConfig {
 		log.info("  == Plugins ==   数据库类型判断");
 		String db_type = (String) PropertiesPlugin.getParamMapValue(DictKeys.db_type_key);
 		if(db_type.equals(DictKeys.db_type_postgresql)){
-			log.info("configPlugin 使用数据库类型是 postgresql");
+			log.info("  == Plugins ==    使用数据库类型是 postgresql");
 			arpMain.setDialect(new PostgreSqlDialect());
 			
 		}else if(db_type.equals(DictKeys.db_type_mysql)){
-			log.info("configPlugin 使用数据库类型是 mysql");
+			log.info("  == Plugins ==    使用数据库类型是 mysql");
 			arpMain.setDialect(new MysqlDialect());
 		
 		}else if(db_type.equals(DictKeys.db_type_oracle)){
-			log.info("configPlugin 使用数据库类型是 oracle");
+			log.info("  == Plugins ==    使用数据库类型是 oracle");
 			druidPlugin.setValidationQuery("select 1 FROM DUAL"); //指定连接验证语句(用于保存数据库连接池), 这里不加会报错误:invalid oracle validationQuery. select 1, may should be : select 1 FROM DUAL 
 			arpMain.setDialect(new OracleDialect());
 		}
-		log.info("configPlugin 添加druidPlugin插件");
+		
+		log.info("  == Plugins ==    添加druidPlugin插件");
 		me.add(druidPlugin); // 多数据源继续添加
 		
 		log.info("  == Plugins--TablePlugin == 表扫描注册");
@@ -149,27 +155,27 @@ public class AppConfig extends JFinalConfig {
 		new TablePlugin(arpMap).start();
 		me.add(arpMain); // 多数据源继续添加
 		
-		log.info("I18NPlugin 国际化键值对加载");
+		log.info("  == Plugins--I18NPlugin ==    国际化键值对加载");
 		me.add(new I18NPlugin());
 		
-		log.info("  == Plugins--EhCachePlugin  == EhCache缓存");
+		log.info("  == Plugins--EhCachePlugin ==  EhCache缓存");
 		me.add(new EhCachePlugin());
 		
-		log.info("SqlXmlPlugin 解析并缓存 xml sql");
+		log.info("  == Plugins--SqlXmlPlugin ==   解析并缓存 xml sql");
 		me.add(new SqlXmlPlugin());
 	}
 
 	@Override
 	public void configInterceptor(Interceptors me) {
 		
-		log.info("configInterceptor 支持使用session");
+		log.info("  == Interceptors ==   支持使用session");
 		me.add(new SessionInViewInterceptor());
 		
-		log.info("configInterceptor 权限认证拦截器");
-		//me.add(new AuthenticationInterceptor());
+		log.info("  == Interceptors ==    权限认证拦截器");
+		me.add(new AuthenticationInterceptor());
 		
-		log.info("configInterceptor 参数封装拦截器");
-		//me.add(new ParamPkgInterceptor());
+		log.info("  == Interceptors ==    参数封装拦截器");
+		me.add(new ParamPkgInterceptor());
 		
 		
 		// 配置开启事物规则
@@ -177,22 +183,46 @@ public class AppConfig extends JFinalConfig {
 		me.add(new TxByRegex(".*save.*"));
 		me.add(new TxByRegex(".*update.*"));
 		me.add(new TxByRegex(".*delete.*"));
-		//me.add(new TxByActionKeys("/jf/wx/message", "/jf/wx/message/index"));
+		me.add(new TxByActionKeys("/jf/wx/message", "/jf/wx/message/index"));
 	}
 
 	@Override
 	public void configHandler(Handlers me) {
-
+		log.info("configHandler 全局配置处理器，主要是记录日志和request域值处理");
+		me.add(new GlobalHandler());
 	}
 
 	@Override
 	public void afterJFinalStart() {
-		super.afterJFinalStart();
+		log.info(" == afterJFinalStart ==  缓存参数");
+		new ThreadParamInit().start();
+
+		log.info(" == afterJFinalStart ==  启动操作日志入库线程");
+		ThreadSysLog.startSaveDBThread();
+
+		boolean luceneIndex = getPropertyToBoolean(DictKeys.config_luceneIndex, false);
+		
+		if(luceneIndex){
+			log.info("afterJFinalStart 创建自动回复lucene索引");
+			//new DocKeyword().run(); 
+		}
+		
+		log.info("afterJFinalStart 系统负载");
+		//TimerResources.start();
+		
+		
 	}
 
 	@Override
 	public void beforeJFinalStop() {
-		super.beforeJFinalStop();
+		log.info("beforeJFinalStop 释放lucene索引资源");
+		//new DocKeyword().close();
+
+		log.info("beforeJFinalStop 释放日志入库线程");
+		ThreadSysLog.setThreadRun(false);
+
+		log.info("beforeJFinalStop 释放系统负载抓取线程");
+		//TimerResources.stop();
 	}
 	
 	/**

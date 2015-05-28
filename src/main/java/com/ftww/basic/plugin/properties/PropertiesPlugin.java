@@ -185,7 +185,6 @@ public class PropertiesPlugin implements IPlugin {
 		for(String key:paramMap.keySet()){
 			log.debug("全局参数配置："+key+" = "+paramMap.get(key));
 		}
-		
 		return true;
 	}
 

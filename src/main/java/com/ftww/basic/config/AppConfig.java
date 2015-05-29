@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.beetl.core.GroupTemplate;
 
+import com.alibaba.druid.filter.stat.StatFilter;
+import com.alibaba.druid.wall.WallFilter;
 import com.ftww.basic.beetl.format.DateFormat;
 import com.ftww.basic.beetl.func.EscapeXml;
 import com.ftww.basic.beetl.func.HasPrivilegeUrl;
@@ -25,6 +27,7 @@ import com.ftww.basic.plugin.properties.PropertiesPlugin;
 import com.ftww.basic.plugin.sqlinxml.SqlXmlPlugin;
 import com.ftww.basic.thread.ThreadParamInit;
 import com.ftww.basic.thread.ThreadSysLog;
+import com.ftww.basic.thread.TimerResources;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -46,7 +49,7 @@ import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.plugin.ehcache.EhCachePlugin;
 
 /**
- * 
+ * Jfinal API 引导式配置
  * @author FireTercel
  *
  */
@@ -68,7 +71,7 @@ public class AppConfig extends JFinalConfig {
 		log.info(" == Constants == 设置开发模式");
 		me.setDevMode(getPropertyToBoolean(DictKeys.config_devMode, false));
 		
-		log.info("  == Constants == 设置日志--Slf4j--");
+		//log.info("  == Constants == 设置日志--Slf4j--");
 		//Logger.setLoggerFactory(new Slf4jLogFactory());  
 		
 		log.info("  == Constants == 设置Beetl视图");
@@ -119,6 +122,13 @@ public class AppConfig extends JFinalConfig {
 				(Integer)PropertiesPlugin.getParamMapValue(DictKeys.db_initialSize), 
 				(Integer)PropertiesPlugin.getParamMapValue(DictKeys.db_minIdle), 
 				(Integer)PropertiesPlugin.getParamMapValue(DictKeys.db_maxActive));
+		log.info("  == Plugins--DruidPlugin ==    StatFilter提供JDBC层的统计信息");
+		druidPlugin.addFilter(new StatFilter());
+		log.info("  == Plugins--DruidPlugin ==    WallFilter防御SQL注入攻击");
+		
+		WallFilter wallFilter=new WallFilter();
+		wallFilter.setDbType("h2");
+		druidPlugin.addFilter(wallFilter);
 		
 		log.info("  == Plugins--ActiveRecordPlugin == 配置ActiveRecord插件");
 		ActiveRecordPlugin arpMain = new ActiveRecordPlugin(DictKeys.db_dataSource_main, druidPlugin);
@@ -204,11 +214,12 @@ public class AppConfig extends JFinalConfig {
 		
 		if(luceneIndex){
 			log.info("afterJFinalStart 创建自动回复lucene索引");
+			//微信平台使用。
 			//new DocKeyword().run(); 
 		}
 		
 		log.info("afterJFinalStart 系统负载");
-		//TimerResources.start();
+		TimerResources.start();
 		
 		
 	}
@@ -222,7 +233,7 @@ public class AppConfig extends JFinalConfig {
 		ThreadSysLog.setThreadRun(false);
 
 		log.info("beforeJFinalStop 释放系统负载抓取线程");
-		//TimerResources.stop();
+		TimerResources.stop();
 	}
 	
 	/**

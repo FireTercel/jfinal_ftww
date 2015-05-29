@@ -26,7 +26,7 @@ import com.jfinal.log.Logger;
  */
 public class GlobalHandler extends Handler{
 	
-	private static final Logger log = Logger.getLogger(GlobalHandler.class);
+	private static Logger log = Logger.getLogger(GlobalHandler.class);
 	
 	public static final String reqSysLogKey = "reqSysLog";
 

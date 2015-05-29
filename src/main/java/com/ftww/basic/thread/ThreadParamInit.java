@@ -40,7 +40,7 @@ public class ThreadParamInit extends Thread {
 	 * 缓存所有参数
 	 */
 	public static synchronized void cacheAll(){
-		log.info("缓存参数初始化 start ...");
+		log.info("初始化缓存参数……  开始……");
 
 		// 1.缓存用户
 		basic_cacheUser();
@@ -63,7 +63,7 @@ public class ThreadParamInit extends Thread {
 		// 6.缓存参数
 		basic_cacheParam();
 
-		log.info("缓存参数初始化 end ...");
+		log.info("初始化缓存参数……  结束……");
 	}
 	
 	/**
@@ -71,14 +71,14 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2012-10-16 下午1:16:48
 	 */
 	public static void basic_cacheUser() {
-		log.info("缓存加载：User start");
+		log.info("缓存加载：【User】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.user.all");
 		List<User> userList = User.dao.find(sql);
 		for (User user : userList) {
 			User.dao.cacheAdd(user.getPKValue());
 			user = null;
 		}
-		log.info("缓存加载：User end, size = " + userList.size());
+		log.info("缓存加载：【User】……  结束……, size = " + userList.size());
 		userList = null;
 	}
 	
@@ -87,13 +87,13 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2012-10-16 下午1:17:20
 	 */
 	public static void basic_cacheGroup() {
-		log.info("缓存加载：Group start");
+		log.info("缓存加载：【Group】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.group.all");
 		List<Group> groupList = Group.dao.find(sql);
 		for (Group group : groupList) {
 			Group.dao.cacheAdd(group.getPKValue());
 		}
-		log.info("缓存加载：Group end, size = " + groupList.size());
+		log.info("缓存加载：【Group】……  结束……, size = " + groupList.size());
 		groupList = null;
 	}
 	
@@ -102,13 +102,13 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2012-10-16 下午1:17:20
 	 */
 	public static void basic_cacheRole() {
-		log.info("缓存加载：Role start");
+		log.info("缓存加载：【Role】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.role.all");
 		List<Role> roleList = Role.dao.find(sql);
 		for (Role role : roleList) {
 			Role.dao.cacheAdd(role.getPKValue());
 		}
-		log.info("缓存加载：Role end, size = " + roleList.size());
+		log.info("缓存加载：【Role】……  结束……, size = " + roleList.size());
 		roleList = null;
 	}
 	
@@ -117,13 +117,13 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2013-07-16 下午1:17:20
 	 */
 	public static void basic_cacheStation() {
-		log.info("缓存加载：Station start");
+		log.info("缓存加载：【Station】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.station.all");
 		List<Station> stationList = Station.dao.find(sql);
 		for (Station station : stationList) {
 			Station.dao.cacheAdd(station.getPKValue());
 		}
-		log.info("缓存加载：Station end, size = " + stationList.size());
+		log.info("缓存加载：【Station】……  结束……, size = " + stationList.size());
 		stationList = null;
 	}
 	
@@ -132,14 +132,14 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2012-10-16 下午1:17:12
 	 */
 	public static void basic_cacheOperator() {
-		log.info("缓存加载：Operator start");
+		log.info("缓存加载：【Operator】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.operator.all");
 		List<Operator> operatorList = Operator.dao.find(sql);
 		for (Operator operator : operatorList) {
 			Operator.dao.cacheAdd(operator.getPKValue());
 			operator = null;
 		}
-		log.info("缓存加载：Operator end, size = " + operatorList.size());
+		log.info("缓存加载：【Operator】……  结束……, size = " + operatorList.size());
 		operatorList = null;
 	}
 	
@@ -148,14 +148,14 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2012-10-16 下午1:17:04
 	 */
 	public static void basic_cacheDict() {
-		log.info("缓存加载：Dict start");
+		log.info("缓存加载：【Dict】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.dict.all");
 		List<Dict> dictList = Dict.dao.find(sql);
 		for (Dict dict : dictList) {
 			Dict.dao.cacheAdd(dict.getPKValue());
 			dict = null;
 		}
-		log.info("缓存加载：Dict end, size = " + dictList.size());
+		log.info("缓存加载：【Dict】……  结束……, size = " + dictList.size());
 		dictList = null;
 	}
 	
@@ -164,14 +164,14 @@ public class ThreadParamInit extends Thread {
 	 * @author 董华健    2012-10-16 下午1:17:04
 	 */
 	public static void basic_cacheParam() {
-		log.info("缓存加载：Param start");
+		log.info("缓存加载：【Param】……  开始……");
 		String sql = SqlXmlKit.getSql("basic.param.all");
 		List<Param> paramList = Param.dao.find(sql);
 		for (Param param : paramList) {
 			Param.dao.cacheAdd(param.getPKValue());
 			param = null;
 		}
-		log.info("缓存加载：Param end, size = " + paramList.size());
+		log.info("缓存加载：【Param】……  结束……, size = " + paramList.size());
 		paramList = null;
 	}
 

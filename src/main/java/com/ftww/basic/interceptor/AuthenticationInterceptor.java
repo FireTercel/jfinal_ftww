@@ -24,7 +24,7 @@ import com.jfinal.log.Logger;
  */
 public class AuthenticationInterceptor implements Interceptor {
 	
-	private final static Logger log = Logger.getLogger(AuthenticationInterceptor.class);
+	private static Logger log = Logger.getLogger(AuthenticationInterceptor.class);
 
 	@Override
 	public void intercept(ActionInvocation ai) {

@@ -24,7 +24,7 @@ import com.jfinal.log.Logger;
  */
 public abstract class BaseController extends Controller {
 
-	private final static Logger log = Logger.getLogger(BaseController.class);
+	private static Logger log = Logger.getLogger(BaseController.class);
 	
 	protected String ids;		//主键
 	protected SplitPage splitPage;		//分页封装

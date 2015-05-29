@@ -18,7 +18,7 @@ import com.jfinal.plugin.IPlugin;
  */
 public class ControllerPlugin implements IPlugin {
 	
-	private final static Logger log= Logger.getLogger(ControllerPlugin.class);
+	private static Logger log= Logger.getLogger(ControllerPlugin.class);
 	
 	private Routes me;
 	

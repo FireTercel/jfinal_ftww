@@ -1,8 +1,9 @@
 package com.ftww.basic.beetl.render;
 
-import org.apache.log4j.Logger;
 import org.beetl.core.GroupTemplate;
 import org.beetl.ext.jfinal.BeetlRender;
+
+import com.jfinal.log.Logger;
 
 /**
  * 继承BeetlRender，实现视图耗时的计算

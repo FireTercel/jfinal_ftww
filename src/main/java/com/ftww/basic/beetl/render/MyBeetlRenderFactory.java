@@ -1,9 +1,9 @@
 package com.ftww.basic.beetl.render;
 
-import org.apache.log4j.Logger;
 import org.beetl.ext.jfinal.BeetlRender;
 import org.beetl.ext.jfinal.BeetlRenderFactory;
 
+import com.jfinal.log.Logger;
 import com.jfinal.render.Render;
 
 /**

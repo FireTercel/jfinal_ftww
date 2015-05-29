@@ -22,7 +22,7 @@ import com.jfinal.log.Logger;
  */
 public class ParamPkgInterceptor implements Interceptor {
 
-	private final static Logger log = Logger.getLogger(ParamPkgInterceptor.class);
+	private static Logger log = Logger.getLogger(ParamPkgInterceptor.class);
 	
 	@Override
 	public void intercept(ActionInvocation ai) {

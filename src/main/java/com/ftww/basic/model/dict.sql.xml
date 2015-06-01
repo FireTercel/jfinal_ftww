@@ -29,14 +29,14 @@
 	<!-- 查询字典树根节点 -->
 	<sql id="treeNodeRoot">
 		<![CDATA[ 
-        	select ids, names, isparent, images, status from pt_dict where parentIds is null order by orderIds asc
+        	select ids, names, isparent, images, status from pt_dict where parentids is null order by orderids asc
     	]]>
 	</sql>
 	
 	<!-- 查询字典树子节点 -->
 	<sql id="treeChildNode">
 		<![CDATA[ 
-        	select ids, names, isparent, images, status from pt_dict where parentIds = ? order by orderids asc
+        	select ids, names, isparent, images, status from pt_dict where parentids = ? order by orderids asc
     	]]>
 	</sql>
 	

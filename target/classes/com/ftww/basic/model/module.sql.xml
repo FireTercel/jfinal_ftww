@@ -5,14 +5,14 @@
 -->
 <sql-statement namespace="basic.module">
 	
-	<!-- 根节点 -->
+	<!-- 根节点   参数：平台系统id，查询结果：该平台系统根模块-->
 	<sql id="rootBySystemIds">
 		<![CDATA[ 
         	select ids, names, isparent, images from pt_module where parentModuleIds is null and systemsIds = ? order by orderIds asc
     	]]>
 	</sql>
 	
-	<!-- 根节点 -->
+	<!-- 根节点  查询结果：根模块id、平台系统名称、根模块父节点标示、图标-->
 	<sql id="root">
 		<![CDATA[ 
         	select pm.ids, (select ps.names from pt_systems ps where ps.ids = pm.systemsIds) as names, pm.isParent, pm.images 

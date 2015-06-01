@@ -6,7 +6,8 @@ import com.jfinal.log.Logger;
 
 
 /**
- * 模块model
+ * 模块model.<br>
+ * 平台系统(Systems)-下属功能模块(Module)-根模块-子模块.
  * @author FireTercel 2015年5月27日 
  *
  */

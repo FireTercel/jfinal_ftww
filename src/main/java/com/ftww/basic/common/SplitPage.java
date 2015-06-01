@@ -5,7 +5,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 分页封装
+ * 分页封装，
+ * 当前页数据-list，
+ * 当前第n页-pageNumber，总共N页-totalPage，
+ * 每页m条-currentPageCount，总共M条-totalRow，
+ * 是否第一页-isFirst、是否最后一页-isLast、
+ * 
+ * 分页查询条件-queryParam、排序条件-orderColumn、排序方式-orderMode
+ * 
  * @author FireTercel 2015年5月27日 
  *
  */
@@ -23,7 +30,7 @@ public class SplitPage implements Serializable {
 	private int pageSize = DictKeys.default_pageSize;// 每页显示几多
 	
 	/**
-	 * 分页结果住数据
+	 * 分页结果的数据
 	 */
 	private List<?> list; // 当前页数据
 	private int totalPage; // 总页数
@@ -60,7 +67,7 @@ public class SplitPage implements Serializable {
 	}
 
 	/**
-	 * 计算总页数
+	 * 计算总页数-取模数，余数大于0则页数除后加1。
 	 * @return
 	 */
 	public int getTotalPage() {

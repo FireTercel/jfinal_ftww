@@ -14,6 +14,7 @@ import org.junit.Test;
  */
 public class StringKit {
 	
+	@SuppressWarnings("unused")
 	private static Logger log=Logger.getLogger(StringKit.class);
 	
 	/**

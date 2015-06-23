@@ -79,7 +79,7 @@ public class SqlXmlKit {
 		if(null ==sql || sql.isEmpty()){
 			log.error("sql语句不存在：sql id是" + sqlId);
 		}
-		return sql.replaceAll("[\\s]{2,}", "");
+		return sql.replaceAll("[\\s]{2,}", " ");
 	}
 	
 	/**

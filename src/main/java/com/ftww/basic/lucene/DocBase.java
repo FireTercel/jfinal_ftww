@@ -49,7 +49,7 @@ public abstract class DocBase implements Runnable{
 	 * 获取索引路径
 	 * @return
 	 */
-	protected abstract String getIndexPath();
+	protected abstract String getIndexPath(); 
 	
 	/**
 	 * 获取索引目录：磁盘

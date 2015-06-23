@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 处理登录提交和登录失败
  * Superclass for any filter that controls access to a resource and may redirect the user to the login page
  * if they are not authenticated.  This superclass provides the method
  * {@link #saveRequestAndRedirectToLogin(javax.servlet.ServletRequest, javax.servlet.ServletResponse)}
@@ -393,6 +394,7 @@ public abstract class ShiroAccessControlFilter extends PathMatchingFilter {
 	public String getRealFailureUrl(ServletRequest request) {
 		String failureUrl = "";
 		// 多点登录
+		//登录失败跳转url和登录成功提交url
 		if (failureUrlMap != null && loginUrlMap != null) {
 			String roleKey = null;
 			for (String path : loginUrlMap.values()) {

@@ -21,7 +21,7 @@ import com.ftww.basic.encription.EncriptionKit;
 import com.ftww.basic.plugin.shiro.exception.IncorrectCaptchaException;
 
 /**
- * 认证，即登录
+ * 认证，即登录，包含验证码
  * An <code>AuthenticationFilter</code> that is capable of automatically performing an authentication attempt
  * based on the incoming request.
  * 
@@ -36,8 +36,7 @@ public abstract class ShiroAuthenticatingFilter extends ShiroAuthenticationFilte
 	//是否使用验证码
 	public static boolean useCaptcha = true;
 	
-	protected boolean executeLogin(ServletRequest request,
-			ServletResponse response) throws Exception {
+	protected boolean executeLogin(ServletRequest request,ServletResponse response) throws Exception {
 		UsernamePasswordToken token = createToken(request, response);
 		if (token == null) {
 			String msg = "createToken method implementation returned null. A valid non-null AuthenticationToken "
@@ -56,37 +55,39 @@ public abstract class ShiroAuthenticatingFilter extends ShiroAuthenticationFilte
 		}
 	}
 	
-	protected abstract UsernamePasswordToken createToken(ServletRequest request,ServletResponse response)throws Exception;
+	protected abstract UsernamePasswordToken createToken(ServletRequest request,
+			ServletResponse response)throws Exception;
 	
-	protected UsernamePasswordToken createToken(String username,String password, ServletRequest request, ServletResponse response) {
+	protected UsernamePasswordToken createToken(String username,String password, 
+			ServletRequest request, ServletResponse response) {
 		boolean rememberMe = isRememberMe(request);
 		String host = getHost(request);
 		return createToken(username, password, rememberMe, host);
 	}
 
-	protected UsernamePasswordToken createToken(String username,String password, boolean rememberMe, String host) {
+	protected UsernamePasswordToken createToken(String username,String password, 
+			boolean rememberMe, String host) {
 		return new UsernamePasswordToken(username, password, rememberMe, host);
 	}
 
 	// 创建 Token
-	protected UsernamePasswordToken createToken(String username,String password, String captcha, ServletRequest request,ServletResponse response) {
+	protected UsernamePasswordToken createToken(String username,String password, String captcha, 
+			ServletRequest request,ServletResponse response) {
 		boolean rememberMe = isRememberMe(request);
 		String host = getHost(request);
-		return new CaptchaUsernamePasswordToken(username, password, rememberMe,
-				host, captcha);
+		return new CaptchaUsernamePasswordToken(username, password, rememberMe,host, captcha);
 	}
 	
 	//返回一个true
-	protected boolean onLoginSuccess(AuthenticationToken token,
-			Subject subject, ServletRequest request, ServletResponse response)
+	protected boolean onLoginSuccess(AuthenticationToken token,Subject subject, 
+			ServletRequest request, ServletResponse response)
 			throws Exception {
 		return true;
 	}
 
 	//返回一个false
-	protected boolean onLoginFailure(AuthenticationToken token,
-			AuthenticationException e, ServletRequest request,
-			ServletResponse response) throws Exception {
+	protected boolean onLoginFailure(AuthenticationToken token,AuthenticationException e, 
+			ServletRequest request,ServletResponse response) throws Exception {
 		return false;
 	}
 	
@@ -139,9 +140,10 @@ public abstract class ShiroAuthenticatingFilter extends ShiroAuthenticationFilte
 	 * is set.
 	 * 
 	 * @return <code>true</code> if request should be allowed access
+	 * @throws Exception 
 	 */
 	@Override
-	protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
+	protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) throws Exception {
 	    return super.isAccessAllowed(request, response, mappedValue) ||
 	        (!isLoginRequest(request, response) && isPermissive(mappedValue));
 	}
@@ -197,9 +199,11 @@ public abstract class ShiroAuthenticatingFilter extends ShiroAuthenticationFilte
 						.toString();
 				// String captcha = CookieUtils.getCookie(request,
 				// AppConstants.CAPTCHA_NAME);
+				/*
+				 * 从session获取captcha验证码，并将其和token进行对比是否一致。
+				 */
 				if (token.getCaptcha() != null
-						&& captcha.equalsIgnoreCase(EncriptionKit.encrypt(token
-								.getCaptcha().toLowerCase()))) {
+						&& captcha.equalsIgnoreCase(EncriptionKit.encrypt(token.getCaptcha().toLowerCase()))) {
 					return;
 				}
 			}

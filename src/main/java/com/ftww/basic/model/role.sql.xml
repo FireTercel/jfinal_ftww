@@ -33,6 +33,14 @@
     	]]>
 	</sql>
 	
+	<!--  -->
+	<sql id="byUser">
+		<![CDATA[ 
+        	FROM sec_role `role` WHERE `role`.ids IN (SELECT `userRole`.role_ids FROM
+      		sec_user_role `userRole` WHERE `userRole`.user_ids=?)
+    	]]>
+	</sql>
+	
 	<!-- 动态SQL处理 -->
 	<sql id="splitPage">
 		<![CDATA[ 

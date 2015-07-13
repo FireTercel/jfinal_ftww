@@ -24,6 +24,7 @@ public class ThreadParamInit extends Thread {
 	public static String cacheStart_user = "user_";
 	public static String cacheStart_group = "group_";
 	public static String cacheStart_role = "role_";
+	public static String cacheStart_permission = "permission_";
 	public static String cacheStart_station = "station_";
 	public static String cacheStart_operator = "operator_";
 	public static String cacheStart_dict = "dict_";

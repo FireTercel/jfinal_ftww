@@ -1,5 +1,26 @@
 package com.ftww.basic.plugin.shiro;
 
+/**
+ * Created by wangrenhui on 14-1-3.
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
 import java.io.IOException;
 import java.util.Map;
 
@@ -15,7 +36,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 处理登录提交和登录失败
+ * 处理登录提交和登录失败。<br>
+ * PathMatchingFilter：提供了请求路径匹配功能及拦截器参数解析的功能。
  * Superclass for any filter that controls access to a resource and may redirect the user to the login page
  * if they are not authenticated.  This superclass provides the method
  * {@link #saveRequestAndRedirectToLogin(javax.servlet.ServletRequest, javax.servlet.ServletResponse)}
@@ -45,7 +67,7 @@ public abstract class ShiroAccessControlFilter extends PathMatchingFilter {
 	public static final String POST_METHOD = "POST";
 	
 	/**
-	 * The login url to used to authenticate a user, used when redirecting users if authentication is required.
+	 * The login url to used to authenticate a user, used when redirecting users if authentication is required.<br>
 	 * 登陆失败路径
 	 */
 	private String failureUrl = DEFAULT_LOGIN_URL;

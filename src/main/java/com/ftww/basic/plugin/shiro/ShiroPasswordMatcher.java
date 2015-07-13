@@ -10,8 +10,8 @@ import com.ftww.basic.model.BaseModel;
 import com.ftww.basic.plugin.shiro.hasher.Hasher;
 
 /**
- * 重写PasswordMatcher类
- * @author FireTercel 2015年6月23日 
+ * 用户密码的匹配，涉及到密码的加密encrypt等。
+ * @author Created by wangrenhui on 14-1-3.
  *
  */
 public class ShiroPasswordMatcher extends PasswordMatcher {
@@ -19,17 +19,24 @@ public class ShiroPasswordMatcher extends PasswordMatcher {
 	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(ShiroPasswordMatcher.class);
 
+	/**
+	 * token为表单提交数据<br>
+	 * ino为数据库查询数据。
+	 */
 	@Override
 	public boolean doCredentialsMatch(AuthenticationToken token,AuthenticationInfo info) {
 		boolean match = false;
-		String hasher = ((BaseModel<?>) info.getPrincipals().getPrimaryPrincipal()).get("hasher");
+		String hasher = ((BaseModel<?>) info.getPrincipals().getPrimaryPrincipal()).get("hasher");//获得hasher字段
 		String default_hasher = Hasher.DEFAULT.value();
-		if(default_hasher.equals(hasher)){
+		if(default_hasher.equals(hasher)){//判断数据库取出的和系统默认值是否相同。
 			match = super.doCredentialsMatch(token, info);
 		}
 		return match;
 	}
 
+	/**
+	 * 获得提交密码
+	 */
 	@Override
 	protected Object getSubmittedPassword(AuthenticationToken token) {
 		/*
@@ -46,6 +53,9 @@ public class ShiroPasswordMatcher extends PasswordMatcher {
 		return submit;
 	}
 
+	/**
+	 * 获得数据库保存的密码
+	 */
 	@Override
 	protected Object getStoredPassword(AuthenticationInfo storedAccountInfo) {
 		/*

@@ -4,11 +4,12 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 
 /**
  * 验证登录
- * @author DONGYU
+ * @author Created by wangrenhui on 14-1-3.
  *
  */
 public class CaptchaUsernamePasswordToken extends UsernamePasswordToken{
 	
+	private static final long serialVersionUID = -6819808695165301930L;
 	private String captcha;
 	
 	public String getCaptcha(){

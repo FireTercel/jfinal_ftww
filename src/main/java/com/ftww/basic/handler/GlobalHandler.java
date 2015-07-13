@@ -40,8 +40,8 @@ public class GlobalHandler extends Handler{
 		request.setAttribute(reqSysLogKey, reqSysLog);
 		
 		log.info("设置 web 路径");
-		String cxt = WebKit.getContextPath(request);
-		request.setAttribute("cxt", cxt);
+		String ContextPath = WebKit.getContextPath(request);
+		request.setAttribute("ContextPath", ContextPath);
 		
 		log.debug("request cookie 处理");
 		Map<String, Cookie> cookieMap = WebKit.readCookieMap(request);

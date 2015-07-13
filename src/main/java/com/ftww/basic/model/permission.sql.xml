@@ -3,48 +3,49 @@
 <!--  
 	角色sql
 -->
-<sql-statement namespace="basic.role">
-	
+<sql-statement namespace="basic.permission">
+
 	<!-- 查询所有角色 -->
 	<sql id="all">
 		<![CDATA[ 
-        	select ids from pt_role
+        	select ids from pt_permission
     	]]>
 	</sql>
 	
 	<!-- -->
 	<sql id="noCheckedFilter">
 		<![CDATA[ 
-        	select ids, names from pt_role where ids not in ( ${fitler} ) order by names asc
+        	select ids, names from pt_permission where ids not in ( ${fitler} ) order by names asc
     	]]>
 	</sql>
 	
 	<!--   -->
 	<sql id="checkedFilter">
 		<![CDATA[ 
-        	select ids, names from pt_role where ids in ( ${fitler} ) order by names asc
+        	select ids, names from pt_permission where ids in ( ${fitler} ) order by names asc
     	]]>
 	</sql>
 	
 	<!--  -->
 	<sql id="noChecked">
 		<![CDATA[ 
-        	select ids, names from pt_role order by names asc
+        	select ids, names from pt_permission order by names asc
     	]]>
 	</sql>
 	
-	<!--  -->
-	<sql id="byUser">
+	<!-- 查询所有角色 -->
+	<sql id="byRole">
 		<![CDATA[ 
-        	FROM sec_role `role` WHERE `role`.ids IN (SELECT `userRole`.role_ids FROM
-      		sec_user_role `userRole` WHERE `userRole`.user_ids=?)
+        	FROM pt_permission `permission` WHERE `permission`.ids IN (SELECT
+      		`role_permission`.permission_ids FROM pt_role_permission
+      		`role_permission` WHERE `role_permission`.role_ids=?)
     	]]>
 	</sql>
 	
 	<!-- 动态SQL处理 -->
 	<sql id="splitPage">
 		<![CDATA[ 
-        	from pt_role where 1=1
+        	from pt_permission where 1=1
 			
 			<% if(!isEmpty(names)){ %>
 					and names like #'%$names$%'#

@@ -87,8 +87,7 @@ public abstract class ShiroAuthenticationFilter extends ShiroAccessControlFilter
 	 *         unauthenticated
 	 */
 	@Override
-	protected boolean isAccessAllowed(ServletRequest request,
-			ServletResponse response, Object mappedValue) throws Exception {
+	protected boolean isAccessAllowed(ServletRequest request,ServletResponse response, Object mappedValue) throws Exception {
 		Subject subject = getSubject(request, response);
 		/*
 		 * 已授权
@@ -126,6 +125,14 @@ public abstract class ShiroAuthenticationFilter extends ShiroAccessControlFilter
 		// getRealFailureUrl(request));
 	}
 
+	/**
+	 * 获取请求数据，转为 json 数据
+	 * @param request
+	 * @param response
+	 * @param url
+	 * @param returnJson
+	 * @throws Exception
+	 */
 	protected void dynaRedirect(ServletRequest request,ServletResponse response, String url, boolean returnJson)
 			throws Exception {
 		if (returnJson) {

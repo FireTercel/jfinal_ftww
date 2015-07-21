@@ -18,10 +18,10 @@ public class Menu extends BaseModel<Menu> {
 	
 	public static final Menu dao = new Menu();
 	
-	public Operator getOperator(){
-		String operatorIds = get("operatorids");
-		if(null != operatorIds && !operatorIds.isEmpty()){
-			return Operator.dao.findById(operatorIds);
+	public Permission getPermission(){
+		String permissionIds = get("permissionids");
+		if(null != permissionIds && !permissionIds.isEmpty()){
+			return Permission.dao.findById(permissionIds);
 		}
 		return null;
 	}
